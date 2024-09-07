@@ -6,6 +6,13 @@ This was possible thanks to `demucs` (https://github.com/facebookresearch/demucs
 
 I'm looking into using a lighter model (demucs can detect upto musical instruments which are not needed for this purpose) that I can implement in C++, to hopefully achieve something that could be used in realtime with some initial delay. 
 
+## How it works
+
+1) Download the video from YouTube via `yt-dlp`
+2) Extract vocals from media with `demucs`
+3) Recombine the video with the vocals
+4) Host on the local frotend the processed video
+
 ## Usage
 
 After installing the dependencies run the app.py, and open the locally hosted frontend on your browser. 
